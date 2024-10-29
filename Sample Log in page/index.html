@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log in</title>
+    <script src="script.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!--Global-->
+    <div class="flex items-center justify-center min-h-screen bg-rose-100">
+      <!--Card-->
+      <div class="relative flex m-6 bg-white rounded-md md:m-0 shadow-lg">
+        <!--Left side-->
+        <div class="flex flex-col space-y-6 p-6">
+          <!--Header-->
+          <div class="flex flex-col space-y-6 p-4">
+            <h2 class="text-4xl">Log in</h2>
+            <p class="max-w-md text-md text-gray-500 font-thin">
+              Log in to your account to upload or download pictures, videos or
+              music.
+            </p>
+          </div>
+          <!--Middle Content-->
+          <div id="middle" class="flex flex-col my-8">
+            <input
+              id="input"
+              class="w-full p-4 border border-gray-500 outline-gray-500 text-center rounded-md"
+              type="text"
+              placeholder="Enter your email" />
+            <p id="emailres" class="hidden text-center"></p>
+            <div
+              class="flex flex-col mt-6 items-center justify-center space-y-8 md:justify-between md:flex-row md:space-y-0 md:space-x-4">
+              <div class="text-cyan-800"><a href="">Forget password</a></div>
+              <button
+                id="nextbutton"
+                class="w-full md:w-1/2 bg-cyan-800 text-white rounded-md shadow-md p-4 hover:-translate-y-0.5 hover:opacity-90">
+                <span>Next</span>
+              </button>
+            </div>
+          </div>
+          <!--horizonal line-->
+          <div class="border-b border-gray-400 py-4"></div>
+          <!-- Log in buttons-->
+          <div
+            class="flex flex-col pt-4 items-center space-y-4 md:flex-row md:space-y-0 md:space-x-4 md:justify-between">
+            <button
+              class="w-full flex flex-row items-center justify-center space-x-2 p-4 border text-lg shadow-md hover:-translate-y-0.5 hover:bg-gray-50">
+              <img src="images/google.png" class="w-6" /><span>Google</span>
+            </button>
+            <button
+              class="w-full flex flex-row items-center justify-center space-x-2 p-4 border text-lg shadow-md hover:-translate-y-0.5 hover:bg-gray-50">
+              <img src="images/facebook.png" class="w-6" /><span>Facebook</span>
+            </button>
+          </div>
+          <div class="flex justify-center pt-4 text-cyan-700">
+            <a href="">Log in with other</a>
+          </div>
+        </div>
+        <!--Right side-->
+        <img src="images/image.jpg" class="w-[400px] hidden md:block" />
+        <div
+          class="absolute top-5 right-5 rounded-full bg-gray-100 cursor-pointer hover:opacity-80 hover:-translate-y-0.5">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-6 h-6 text-black group-hover:text-gray-600"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
